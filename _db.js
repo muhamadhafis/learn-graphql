@@ -26,7 +26,19 @@ const members = [
   },
   {
     id: 2,
-    name: "Jane Doe",
+    name: "Jessica",
+    email: "jane@example.com",
+    verified: false,
+  },
+  {
+    id: 3,
+    name: "Ronald",
+    email: "john@example.com",
+    verified: true,
+  },
+  {
+    id: 4,
+    name: "Jane",
     email: "jane@example.com",
     verified: false,
   },
@@ -80,4 +92,35 @@ const products = [
   },
 ];
 
-export { books, members, products };
+const lendings = [
+  {
+    id: 4,
+    book_id: 1,
+    member_id: 1,
+    borrowed_at: "2021-12-15",
+    returned_at: "2021-12-16",
+  },
+  {
+    id: 5,
+    book_id: 2,
+    member_id: 2,
+    borrowed_at: "2021-12-15",
+    returned_at: "2021-12-16",
+  },
+  {
+    id: 6,
+    book_id: 1,
+    member_id: 3,
+    borrowed_at: "2021-12-15",
+    returned_at: "2021-12-16",
+  },
+  {
+    id: 7,
+    book_id: 2,
+    member_id: 4,
+    borrowed_at: "2021-12-15",
+    returned_at: "2021-12-16",
+  },
+];
+
+export { books, members, products, lendings };

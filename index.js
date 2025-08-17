@@ -36,7 +36,7 @@ const typeDefs = `#graphql
     members: [Members!]!
     member(id: ID!): Members!
     products: [Products!]!
-    product(id: ID, location: String): [Products!]!
+    product(id: ID): Products!
   }`;
 
 const resolvers = {
@@ -46,7 +46,7 @@ const resolvers = {
     members: () => members,
     member: (_, args) => members.find((member) => member.id == args.id),
     products: () => products,
-    product: (_, args) => products.find((p) => p.location == args.location),
+    product: (_, args) => products.find((p) => p.id == args.id),
   },
 };
 
